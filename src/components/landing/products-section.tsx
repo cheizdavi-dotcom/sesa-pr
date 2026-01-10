@@ -7,6 +7,9 @@ const technicalProducts = [
     { name: "Técnico de Enfermagem" },
     { name: "Técnico de Laboratório" },
     { name: "Técnico de Segurança do Trabalho" },
+    { name: "Técnico em Contabilidade" },
+    { name: "Técnico em Informática" },
+    { name: "Técnico em Radiologia" },
 ];
 
 const higherLevelProducts = [
@@ -16,6 +19,15 @@ const higherLevelProducts = [
     { name: "Assistente Social" },
     { name: "Biólogo" },
     { name: "Biomédico" },
+    { name: "Contador" },
+    { name: "Enfermeiro" },
+    { name: "Engenheiro Civil" },
+    { name: "Farmacêutico" },
+    { name: "Fisioterapeuta" },
+    { name: "Fonoaudiólogo" },
+    { name: "Médico Veterinário" },
+    { name: "Nutricionista" },
+    { name: "Psicólogo" },
 ];
 
 const ProductCard = ({ name }: { name: string }) => (
@@ -45,7 +57,7 @@ const ProductCard = ({ name }: { name: string }) => (
                     </li>
                 </ul>
             </div>
-            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-md font-bold mt-4">
+            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-md font-bold mt-4 animate-pulse-strong">
                 <Link href="#">
                     COMEÇAR A ESTUDAR AGORA
                 </Link>

@@ -11,6 +11,7 @@ import CtaSection from '@/components/landing/cta-section';
 import HandoutsCarouselSection from '@/components/landing/handouts-carousel-section';
 import MaterialForYouSection from '@/components/landing/material-for-you-section';
 import PdfFeaturesSection from '@/components/landing/pdf-features-section';
+import DifferentiatorsSection from '@/components/landing/differentiators-section';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <MaterialForYouSection />
         <ProductsSection />
         <PdfFeaturesSection />
+        <DifferentiatorsSection />
         <SocialProofSection />
       </main>
       <Footer />

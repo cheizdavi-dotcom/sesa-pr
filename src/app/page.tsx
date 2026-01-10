@@ -13,6 +13,7 @@ import MaterialForYouSection from '@/components/landing/material-for-you-section
 import PdfFeaturesSection from '@/components/landing/pdf-features-section';
 import DifferentiatorsSection from '@/components/landing/differentiators-section';
 import TestimonialsSection from '@/components/landing/testimonials-section';
+import SocialProofCarouselSection from '@/components/landing/social-proof-carousel-section';
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <ProductsSection />
         <PdfFeaturesSection />
         <DifferentiatorsSection />
+        <SocialProofCarouselSection />
         <TestimonialsSection />
         <SocialProofSection />
       </main>

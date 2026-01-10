@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 
 export default function HeroSection() {
@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-6 text-center">
           <Badge className="bg-red-600 text-white font-bold animate-pulse py-1 px-3 text-sm">
-            <span className="mr-2">🔴</span> EDITAL PUBLICADO
+            <AlertCircle className="mr-2 h-4 w-4" /> EDITAL PUBLICADO
           </Badge>
           <div className="space-y-4">
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">

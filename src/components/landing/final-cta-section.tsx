@@ -10,10 +10,11 @@ export default function FinalCtaSection() {
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
                         A prova vai acontecer com ou sem você preparado.
                     </h2>
-                    <p className="max-w-2xl text-primary-foreground/90 md:text-lg">
-                        A diferença é a decisão que você toma hoje. Comece agora. Estude com método. Chegue confiante.
-                    </p>
-                    <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg transition-transform duration-300 hover:scale-105 animate-pulse-strong">
+                    <div className="max-w-2xl text-primary-foreground/90 md:text-lg">
+                        <p>A diferença é a decisão que você toma hoje.</p>
+                        <p>Comece agora. Estude com método. Chegue confiante.</p>
+                    </div>
+                    <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg transition-transform duration-300 hover:scale-105">
                         <Link href="#products">
                             ESCOLHER MINHA APOSTILA
                             <ArrowRight className="ml-2 h-4 w-4" />

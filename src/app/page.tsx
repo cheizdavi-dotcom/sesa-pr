@@ -9,6 +9,7 @@ import Footer from '@/components/landing/footer';
 import SalariesSection from '@/components/landing/salaries-section';
 import CtaSection from '@/components/landing/cta-section';
 import HandoutsCarouselSection from '@/components/landing/handouts-carousel-section';
+import MaterialForYouSection from '@/components/landing/material-for-you-section';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <HowItWorksSection />
         <CtaSection />
         <HandoutsCarouselSection />
+        <MaterialForYouSection />
         <ProductsSection />
         <SocialProofSection />
       </main>

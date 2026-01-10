@@ -1,38 +1,41 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, PlusCircle } from "lucide-react";
+import { Check } from "lucide-react";
 import Link from 'next/link';
 
 const products = [
     { 
         name: "Técnico de Enfermagem",
-        focus: "O cargo com maior número de vagas e inscritos.",
-        includes: "Conteúdo completo (Comuns + Específicos).",
-        bonuses: [
-            "DNA da FAFIPA",
-            "Edital Verticalizado",
-            "Cronograma 60 dias",
-        ]
+        description: "Acelere sua Aprovação: Material focado no cargo com o maior número de vagas da SESA-PR.",
+        price: "19,90",
+        features: [
+            "Teoria Filtrada: Conteúdo de Enfermagem direto ao ponto, sem enrolação.",
+            "Padrão FAFIPA: Análise das pegadinhas técnicas que a banca costuma usar.",
+            "Base Completa: Legislação do SUS e matérias comuns inclusas no material."
+        ],
+        buttonText: "QUERO MINHA APOSTILA AGORA"
     },
     { 
         name: "Enfermeiro (Nível Superior)",
-        focus: "Público qualificado e de alta conversão.",
-        includes: "Conteúdo completo (Comuns + Específicos).",
-        bonuses: [
-            "DNA da FAFIPA",
-            "Edital Verticalizado",
-            "Cronograma 60 dias",
-        ]
+        description: "Estratégia de Elite: Preparação de alto nível para quem busca estabilidade e um cargo superior.",
+        price: "19,90",
+        features: [
+            "Manual do SUS: Domine a legislação da saúde pública que mais reprova candidatos.",
+            "Foco em Conhecimentos Específicos: Temas de Enfermagem masterizados conforme o edital 2026.",
+            "Vantagem Competitiva: Guia de estudos otimizado para quem tem pouco tempo."
+        ],
+        buttonText: "QUERO MINHA APOSTILA AGORA"
     },
     { 
         name: "Conhecimentos Comuns (Todos os Cargos)",
-        focus: "O \"Coringa\". Serve para todos os outros 20+ cargos (Administrativo, Psicologia, Farmácia, etc.).",
-        includes: "Português + Raciocínio Lógico + Legislação do SUS + Ética.",
-        bonuses: [
-            "DNA da FAFIPA",
-            "Edital Verticalizado",
-            "Cronograma 60 dias",
-        ]
+        description: "O Coringa do Edital: Essencial para Administrativo, Psicologia, Farmácia, Biologia e demais cargos.",
+        price: "19,90",
+        features: [
+            "A Base que Aprova: Português, Raciocínio Lógico e Ética 100% focados na FAFIPA.",
+            "60% da sua Nota: Garanta a pontuação nas matérias que representam o coração da prova.",
+            "Universal e Objetivo: O guia definitivo para quem precisa bater a base comum rápido."
+        ],
+        buttonText: "QUERO MINHA APOSTILA AGORA"
     },
 ];
 
@@ -68,30 +71,26 @@ export default function ProductsSection() {
                         <Card key={product.name} className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 border-blue-200 bg-white rounded-xl overflow-hidden">
                             <CardHeader className="bg-blue-600 text-white p-6">
                                 <CardTitle className="text-xl font-bold">{product.name}</CardTitle>
-                                <CardDescription className="text-blue-100">{product.focus}</CardDescription>
                             </CardHeader>
                             <CardContent className="flex-1 p-6 space-y-6">
-                                <div>
-                                    <h4 className="font-semibold mb-2 text-gray-700">O que inclui:</h4>
-                                    <p className="text-sm text-gray-600">{product.includes}</p>
-                                </div>
+                                <p className="text-gray-600">{product.description}</p>
                                 
                                 <div>
-                                    <h4 className="font-semibold mb-3 text-gray-700">Bônus Inclusos:</h4>
-                                    <ul className="space-y-2 text-sm text-gray-600">
-                                        {product.bonuses.map(bonus => (
-                                            <li key={bonus} className="flex items-center gap-2">
-                                                <PlusCircle className="h-4 w-4 text-green-500" /> 
-                                                <span>{bonus}</span>
+                                    <h4 className="font-semibold mb-3 text-gray-700">O que você recebe:</h4>
+                                    <ul className="space-y-3 text-sm text-gray-600">
+                                        {product.features.map(feature => (
+                                            <li key={feature} className="flex items-start gap-2">
+                                                <Check className="h-5 w-5 text-green-500 mt-0.5 shrink-0" /> 
+                                                <span>{feature}</span>
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
 
                                 <div className="text-center pt-4">
-                                     <p className="text-sm text-gray-500">Por apenas</p>
+                                     <p className="text-sm text-gray-500">Investimento:</p>
                                      <p className="text-4xl font-bold text-gray-900">
-                                        R$ 19,90
+                                        R$ {product.price}
                                      </p>
                                 </div>
 
@@ -99,7 +98,7 @@ export default function ProductsSection() {
                             <CardFooter className="p-6 bg-gray-50">
                                 <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-md font-bold text-lg py-6">
                                     <Link href="#">
-                                        COMPRAR AGORA
+                                        {product.buttonText}
                                     </Link>
                                 </Button>
                             </CardFooter>

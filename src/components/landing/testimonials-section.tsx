@@ -30,6 +30,22 @@ const testimonials = [
         quote: "Vale muito a pena. Tem tudo que você precisa e pode imprimir também!",
         author: "Candidata SESA-PR"
     },
+    {
+        quote: "O material é bem organizado e claro. Consegui entender os tópicos facilmente.",
+        author: "Candidato SESA-PR"
+    },
+    {
+        quote: "A apostila é completa e aborda tudo que preciso estudar para a prova.",
+        author: "Candidata SESA-PR"
+    },
+    {
+        quote: "Gostei muito da forma como o conteúdo é apresentado, sem complicações desnecessárias.",
+        author: "Candidato SESA-PR"
+    },
+    {
+        quote: "Vale muito a pena. Tem tudo que você precisa e pode imprimir também!",
+        author: "Candidata SESA-PR"
+    },
 ];
 
 export default function TestimonialsSection() {

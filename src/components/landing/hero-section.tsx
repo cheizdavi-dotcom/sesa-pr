@@ -21,7 +21,7 @@ export default function HeroSection() {
             <p className="mx-auto max-w-[700px] text-primary md:text-lg">
                 A Secretaria de Estado da Saúde do Paraná (SESA-PR) abriu 641 vagas para diversos cargos de níveis Técnico e Superior. Prova prevista para março de 2026.
                 <br />
-                Comece agora e estude com calma, antes da pressão do edital apertar!
+                <span className="font-bold">Comece agora e estude com calma, antes da pressão do edital apertar!</span>
             </p>
           </div>
           <div className="space-y-2">

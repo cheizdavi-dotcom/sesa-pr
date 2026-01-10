@@ -15,6 +15,7 @@ import DifferentiatorsSection from '@/components/landing/differentiators-section
 import TestimonialsSection from '@/components/landing/testimonials-section';
 import SocialProofCarouselSection from '@/components/landing/social-proof-carousel-section';
 import GuaranteeSection from '@/components/landing/guarantee-section';
+import FaqSection from '@/components/landing/faq-section';
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         <SocialProofCarouselSection />
         <TestimonialsSection />
         <GuaranteeSection />
+        <FaqSection />
         <SocialProofSection />
       </main>
       <Footer />

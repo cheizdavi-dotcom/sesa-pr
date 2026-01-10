@@ -16,6 +16,7 @@ import TestimonialsSection from '@/components/landing/testimonials-section';
 import SocialProofCarouselSection from '@/components/landing/social-proof-carousel-section';
 import GuaranteeSection from '@/components/landing/guarantee-section';
 import FaqSection from '@/components/landing/faq-section';
+import FinalCtaSection from '@/components/landing/final-cta-section';
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
         <TestimonialsSection />
         <GuaranteeSection />
         <FaqSection />
-        <SocialProofSection />
+        <FinalCtaSection />
       </main>
       <Footer />
     </div>

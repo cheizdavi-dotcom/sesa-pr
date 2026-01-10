@@ -6,6 +6,7 @@ import HowItWorksSection from '@/components/landing/how-it-works-section';
 import ProductsSection from '@/components/landing/products-section';
 import SocialProofSection from '@/components/landing/social-proof-section';
 import Footer from '@/components/landing/footer';
+import SalariesSection from '@/components/landing/salaries-section';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <HeroSection />
         <PillarsSection />
         <ContestInfoSection />
+        <SalariesSection />
         <HowItWorksSection />
         <ProductsSection />
         <SocialProofSection />

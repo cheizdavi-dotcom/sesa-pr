@@ -50,10 +50,10 @@ export default function HowItWorksSection() {
                                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white font-bold text-lg shrink-0 z-10">
                                     {step.number}
                                 </div>
-                                <Card className="w-full shadow-md border-transparent bg-card text-card-foreground hover:shadow-lg transition-shadow">
+                                <Card className="w-full shadow-md border-transparent bg-white text-gray-800 hover:shadow-lg transition-shadow">
                                     <div className="p-6">
-                                        <h3 className="text-lg font-bold text-primary">{step.title}</h3>
-                                        <p className="text-muted-foreground">{step.description}</p>
+                                        <h3 className="text-lg font-bold text-gray-900">{step.title}</h3>
+                                        <p className="text-gray-500">{step.description}</p>
                                     </div>
                                 </Card>
                             </div>

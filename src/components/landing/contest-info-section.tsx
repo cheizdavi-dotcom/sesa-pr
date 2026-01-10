@@ -17,14 +17,14 @@ export default function ContestInfoSection() {
                 <Card className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl">
                     <CardContent className="p-8 md:p-12">
                         <div className="flex items-center gap-3 mb-8">
-                            <BookOpen className="h-8 w-8 text-primary" />
+                            <BookOpen className="h-8 w-8 text-blue-600" />
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline text-gray-800">
                                 Sobre o Concurso
                             </h2>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {contestData.map((item) => (
-                                <div key={item.label} className="p-6 rounded-lg bg-gray-50/50">
+                                <div key={item.label} className="p-6 rounded-lg bg-white shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100">
                                     <p className="text-sm text-gray-500 mb-1">{item.label}</p>
                                     <p className={`text-lg font-bold ${item.isHighlighted ? 'text-blue-600' : 'text-gray-900'}`}>{item.value}</p>
                                 </div>

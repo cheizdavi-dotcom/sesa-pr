@@ -1,5 +1,6 @@
 import * as React from "react"
 import Image from "next/image"
+import Autoplay from "embla-carousel-autoplay"
 
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -13,6 +14,9 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 export default function HandoutsCarouselSection() {
     const handoutImages = PlaceHolderImages.filter(p => p.id.startsWith('handout-'));
+    const plugin = React.useRef(
+        Autoplay({ delay: 2000, stopOnInteraction: true })
+    )
 
   return (
     <section id="handouts" className="w-full py-12 md:py-20 lg:py-24 bg-gray-50">
@@ -23,11 +27,14 @@ export default function HandoutsCarouselSection() {
           </h2>
         </div>
         <Carousel
+          plugins={[plugin.current]}
           opts={{
             align: "start",
             loop: true,
           }}
           className="w-full max-w-4xl mx-auto"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
         >
           <CarouselContent>
             {handoutImages.map((image) => (

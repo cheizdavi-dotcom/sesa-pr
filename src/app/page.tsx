@@ -14,6 +14,7 @@ import PdfFeaturesSection from '@/components/landing/pdf-features-section';
 import DifferentiatorsSection from '@/components/landing/differentiators-section';
 import TestimonialsSection from '@/components/landing/testimonials-section';
 import SocialProofCarouselSection from '@/components/landing/social-proof-carousel-section';
+import GuaranteeSection from '@/components/landing/guarantee-section';
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <DifferentiatorsSection />
         <SocialProofCarouselSection />
         <TestimonialsSection />
+        <GuaranteeSection />
         <SocialProofSection />
       </main>
       <Footer />

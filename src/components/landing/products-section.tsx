@@ -62,7 +62,7 @@ const ProductCard = ({ name }: { name: string }) => (
                     </li>
                 </ul>
             </div>
-            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-md font-bold mt-4 animate-pulse-strong">
+            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-md font-bold mt-4">
                 <Link href="#">
                     COMEÇAR A ESTUDAR AGORA
                 </Link>
@@ -81,6 +81,18 @@ export default function ProductsSection() {
                     </h2>
                     <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl mt-4">
                         Materiais completos, alinhados ao edital SESA-PR e focados na banca FAFIPA.
+                    </p>
+                </div>
+
+                <div className="max-w-2xl mx-auto bg-yellow-50 border border-yellow-300 rounded-lg p-6 text-center mb-12">
+                    <p className="text-gray-600">
+                        Apostilas desse nível normalmente custam entre <span className="line-through">R$ 60 e R$ 120</span>
+                    </p>
+                    <p className="text-2xl font-bold text-blue-600 my-2">
+                        Aqui, você paga apenas R$ 19,90
+                    </p>
+                    <p className="text-sm text-gray-500">
+                        Sem mensalidade. Acesso vitalício. Garantia de 7 dias.
                     </p>
                 </div>
 

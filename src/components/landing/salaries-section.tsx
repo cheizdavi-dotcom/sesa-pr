@@ -10,7 +10,7 @@ const higherLevelRoles = "Enfermeiro, Farmacêutico, Psicólogo, Assistente Soci
 
 export default function SalariesSection() {
     return (
-        <section id="salaries" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <section id="salaries" className="w-full py-12 md:py-16 bg-gray-50">
             <div className="container px-4 md:px-6">
                 <h2 className="text-3xl font-bold tracking-tighter text-center sm:text-4xl font-headline text-gray-800 mb-12">
                     Salários conforme edital vigente

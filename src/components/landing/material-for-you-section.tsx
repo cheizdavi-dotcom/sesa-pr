@@ -17,7 +17,7 @@ const notForYou = [
 
 export default function MaterialForYouSection() {
     return (
-        <section id="material-for-you" className="w-full py-12 md:py-20 lg:py-24 bg-gray-50">
+        <section id="material-for-you" className="w-full py-12 md:py-20 bg-gray-50">
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center space-y-4 text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-gray-800">

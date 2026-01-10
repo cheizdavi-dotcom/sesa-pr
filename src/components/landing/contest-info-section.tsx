@@ -12,7 +12,7 @@ const contestData = [
 
 export default function ContestInfoSection() {
     return (
-        <section id="contest-info" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <section id="contest-info" className="w-full py-12 md:py-16 bg-gray-50">
             <div className="container px-4 md:px-6">
                 <Card className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl">
                     <CardContent className="p-8 md:p-12">

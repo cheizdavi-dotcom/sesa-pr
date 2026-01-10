@@ -10,6 +10,8 @@ const technicalProducts = [
     { name: "Técnico em Contabilidade" },
     { name: "Técnico em Informática" },
     { name: "Técnico em Radiologia" },
+    { name: "Inspetor de Saneamento" },
+    { name: "Técnico Administrativo" },
 ];
 
 const higherLevelProducts = [
@@ -28,6 +30,9 @@ const higherLevelProducts = [
     { name: "Médico Veterinário" },
     { name: "Nutricionista" },
     { name: "Psicólogo" },
+    { name: "Químico" },
+    { name: "Terapeuta Ocupacional" },
+    { name: "Economista" },
 ];
 
 const ProductCard = ({ name }: { name: string }) => (
@@ -68,7 +73,7 @@ const ProductCard = ({ name }: { name: string }) => (
 
 export default function ProductsSection() {
     return (
-        <section id="products" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 text-gray-800">
+        <section id="products" className="w-full py-12 md:py-16 bg-gray-50 text-gray-800">
             <div className="container px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
@@ -84,7 +89,7 @@ export default function ProductsSection() {
                         <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mb-8 text-left">
                             Nível Técnico
                         </h3>
-                        <div className="mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                             {technicalProducts.map((product) => (
                                 <ProductCard key={product.name} name={product.name} />
                             ))}
@@ -95,7 +100,7 @@ export default function ProductsSection() {
                         <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mb-8 text-left">
                             Nível Superior
                         </h3>
-                        <div className="mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                             {higherLevelProducts.map((product) => (
                                 <ProductCard key={product.name} name={product.name} />
                             ))}

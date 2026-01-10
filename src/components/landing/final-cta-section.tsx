@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function FinalCtaSection() {
     return (
-        <section className="w-full py-12 md:py-20 lg:py-24 bg-background text-primary">
+        <section className="w-full py-12 md:py-20 bg-background text-primary">
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center space-y-6 text-center">
                     <h2 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl font-headline text-primary">

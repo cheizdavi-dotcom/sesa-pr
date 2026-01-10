@@ -68,14 +68,14 @@ export default function ProductsSection() {
 
                 <div className="mx-auto grid max-w-5xl items-stretch gap-8 sm:grid-cols-1 lg:grid-cols-3 lg:gap-8">
                     {products.map((product) => (
-                        <Card key={product.name} className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 border-blue-200 bg-white rounded-xl overflow-hidden">
+                        <Card key={product.name} className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 border-transparent bg-white rounded-xl overflow-hidden">
                             <CardHeader className="bg-blue-600 text-white p-6">
-                                <CardTitle className="text-xl font-bold">{product.name}</CardTitle>
+                                <CardTitle className="text-xl font-bold text-center">{product.name}</CardTitle>
                             </CardHeader>
-                            <CardContent className="flex-1 p-6 space-y-6">
-                                <p className="text-gray-600">{product.description}</p>
+                            <CardContent className="flex-1 p-6 space-y-6 flex flex-col">
+                                <p className="text-gray-600 text-center">{product.description}</p>
                                 
-                                <div>
+                                <div className="flex-1">
                                     <h4 className="font-semibold mb-3 text-gray-700">O que você recebe:</h4>
                                     <ul className="space-y-3 text-sm text-gray-600">
                                         {product.features.map(feature => (
@@ -95,8 +95,8 @@ export default function ProductsSection() {
                                 </div>
 
                             </CardContent>
-                            <CardFooter className="p-6 bg-gray-50">
-                                <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-md font-bold text-lg py-6">
+                            <CardFooter className="p-6 bg-white border-t border-gray-100">
+                                <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-md font-bold text-lg py-6 animate-pulse-strong">
                                     <Link href="#">
                                         {product.buttonText}
                                     </Link>

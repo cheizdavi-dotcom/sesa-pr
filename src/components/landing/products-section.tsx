@@ -48,8 +48,22 @@ export default function ProductsSection() {
                         Materiais completos, alinhados ao edital SESA-PR e focados na banca FAFIPA.
                     </p>
                 </div>
+                
+                <div className="my-12 max-w-2xl mx-auto">
+                    <div className="rounded-lg border border-orange-300 bg-orange-50 p-6 text-center shadow-sm">
+                        <p className="text-lg text-gray-600">
+                            Apostilas desse nível normalmente custam entre <span className="line-through">R$ 60</span> e <span className="line-through">R$ 120</span>
+                        </p>
+                        <p className="mt-2 text-2xl font-bold text-blue-600">
+                            Aqui, você paga apenas R$ 19,90
+                        </p>
+                        <p className="mt-2 text-sm text-gray-500">
+                            Sem mensalidade. Acesso vitalício. Garantia de 7 dias.
+                        </p>
+                    </div>
+                </div>
 
-                <div className="mx-auto grid max-w-5xl items-stretch gap-8 sm:grid-cols-1 lg:grid-cols-3 lg:gap-8 mt-12">
+                <div className="mx-auto grid max-w-5xl items-stretch gap-8 sm:grid-cols-1 lg:grid-cols-3 lg:gap-8">
                     {products.map((product) => (
                         <Card key={product.name} className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 border-blue-200 bg-white rounded-xl overflow-hidden">
                             <CardHeader className="bg-blue-600 text-white p-6">

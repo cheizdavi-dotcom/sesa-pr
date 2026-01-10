@@ -26,8 +26,12 @@ export default function PillarsSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-gray-800">
-              Por que estudar com o Protocolo Aprova Mais?
+              Por que estudar com o Aprova Mais?
             </h2>
+            <div className="max-w-3xl text-gray-600 md:text-lg">
+              <p>A maioria das apostilas apenas reúne conteúdo.</p>
+              <p className="font-bold">As nossas são organizadas com foco no que a banca FAFIPA realmente cobra.</p>
+            </div>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-12 mt-12">

@@ -1,21 +1,21 @@
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Focus, BookCopy, UserCheck } from 'lucide-react';
+import { Target, TrendingUp, Award } from 'lucide-react';
 
 const pillars = [
   {
-    icon: <Focus className="h-8 w-8 text-primary" />,
+    icon: <Target className="h-8 w-8 text-blue-600" />,
     title: 'Conteúdo Priorizado',
-    description: 'Foco no que Pontua. Menos volume morto, mais assertividade. Eliminamos as "encheadas de linguiça" dos cursinhos tradicionais.',
+    description: 'Menos volume, mais acerto. Focamos no que realmente importa para sua aprovação.',
   },
   {
-    icon: <BookCopy className="h-8 w-8 text-primary" />,
+    icon: <TrendingUp className="h-8 w-8 text-blue-600" />,
     title: 'Organização Inteligente',
-    description: 'Estudo em Ciclos. Material estruturado para revisões rápidas e memorização de longo prazo, não apenas leitura passiva.',
+    description: 'Material estruturado para revisão eficiente, não apenas leitura linear.',
   },
   {
-    icon: <UserCheck className="h-8 w-8 text-primary" />,
+    icon: <Award className="h-8 w-8 text-blue-600" />,
     title: 'Direcionamento por Cargo',
-    description: 'Zero Generalismo. Cada apostila é construída rigorosamente sobre as competências específicas do seu cargo na SESA-PR.',
+    description: 'Não é material genérico. Cada apostila é específica para seu cargo.',
   },
 ];
 
@@ -26,21 +26,24 @@ export default function PillarsSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-gray-800">
-              Por que estudar com o Protocolo Aprova Mais?
+              Por que estudar com o Aprova Mais?
             </h2>
+            <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              A maioria das apostilas apenas reúne conteúdo. As nossas são organizadas com foco no que a banca FAFIPA realmente cobra.
+            </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-12 mt-12">
           {pillars.map((pillar) => (
-            <div key={pillar.title} className="flex flex-col items-center text-center gap-4">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+            <Card key={pillar.title} className="flex flex-col items-center text-center gap-4 p-6 rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.05)] border border-gray-100 transition-all hover:shadow-lg hover:-translate-y-1">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
                 {pillar.icon}
               </div>
               <div className="space-y-2">
                 <h3 className="text-xl font-bold text-gray-800">{pillar.title}</h3>
                 <p className="text-gray-600">{pillar.description}</p>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>

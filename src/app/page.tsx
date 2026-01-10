@@ -10,6 +10,7 @@ import SalariesSection from '@/components/landing/salaries-section';
 import CtaSection from '@/components/landing/cta-section';
 import HandoutsCarouselSection from '@/components/landing/handouts-carousel-section';
 import MaterialForYouSection from '@/components/landing/material-for-you-section';
+import PdfFeaturesSection from '@/components/landing/pdf-features-section';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <HandoutsCarouselSection />
         <MaterialForYouSection />
         <ProductsSection />
+        <PdfFeaturesSection />
         <SocialProofSection />
       </main>
       <Footer />

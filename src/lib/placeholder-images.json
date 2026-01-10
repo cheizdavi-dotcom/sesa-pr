@@ -5,6 +5,36 @@
       "description": "Avatar for a testimonial",
       "imageUrl": "https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBmYWNlfGVufDB8fHx8MTc2ODAwNjE5NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person face"
+    },
+    {
+      "id": "handout-1",
+      "description": "Handout page 1",
+      "imageUrl": "https://images.unsplash.com/photo-1717944517579-9eb6bf73be87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkb2N1bWVudCUyMHBhZ2V8ZW58MHx8fHwxNzY4MDY3NjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "document page"
+    },
+    {
+      "id": "handout-2",
+      "description": "Handout page 2",
+      "imageUrl": "https://images.unsplash.com/photo-1767806109084-9e20d5c8d0d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkb2N1bWVudCUyMHBhZ2V8ZW58MHx8fHwxNzY4MDY3NjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "document page"
+    },
+    {
+      "id": "handout-3",
+      "description": "Handout page 3",
+      "imageUrl": "https://images.unsplash.com/photo-1767980643277-3c835f981579?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZG9jdW1lbnQlMjBwYWdlfGVufDB8fHx8MTc2ODA2NzYwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "document page"
+    },
+    {
+      "id": "handout-4",
+      "description": "Handout page 4",
+      "imageUrl": "https://images.unsplash.com/photo-1760974667644-bd58e6b1b158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkb2N1bWVudCUyMHBhZ2V8ZW58MHx8fHwxNzY4MDY3NjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "document page"
+    },
+    {
+      "id": "handout-5",
+      "description": "Handout page 5",
+      "imageUrl": "https://images.unsplash.com/photo-1610385983592-bd3cb040d9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2N1bWVudCUyMHBhZ2V8ZW58MHx8fHwxNzY4MDY3NjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "document page"
     }
   ]
 }

@@ -15,10 +15,10 @@ export default function HeroSection() {
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none text-primary">
               Concurso SESA-PR 2026: 641 Vagas Disponíveis
             </h1>
-            <p className="mx-auto max-w-[700px] text-primary/80 md:text-xl font-semibold">
+            <p className="mx-auto max-w-[700px] text-primary md:text-xl font-semibold">
               Prepare-se com material alinhado ao edital e focado na banca FAFIPA
             </p>
-            <p className="mx-auto max-w-[700px] text-primary/70 md:text-lg">
+            <p className="mx-auto max-w-[700px] text-primary md:text-lg">
                 A Secretaria de Estado da Saúde do Paraná (SESA-PR) abriu 641 vagas para diversos cargos de níveis Técnico e Superior. Prova prevista para março de 2026.
                 <br />
                 Comece agora e estude com calma, antes da pressão do edital apertar!

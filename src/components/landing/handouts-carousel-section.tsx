@@ -42,18 +42,14 @@ export default function HandoutsCarouselSection() {
             {handoutImages.map((image) => (
               <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
-                  <Card className="shadow-lg">
-                    <CardContent className="flex aspect-[3/4] items-center justify-center p-2">
-                        <Image 
-                            src={image.imageUrl}
-                            alt={image.description}
-                            width={400}
-                            height={600}
-                            className="rounded-md object-cover"
-                            data-ai-hint={image.imageHint}
-                        />
-                    </CardContent>
-                  </Card>
+                    <Image 
+                        src={image.imageUrl}
+                        alt={image.description}
+                        width={400}
+                        height={600}
+                        className="rounded-md object-cover aspect-[3/4] shadow-lg"
+                        data-ai-hint={image.imageHint}
+                    />
                 </div>
               </CarouselItem>
             ))}

@@ -8,33 +8,45 @@
     },
     {
       "id": "handout-1",
-      "description": "Handout page 1",
-      "imageUrl": "https://images.unsplash.com/photo-1717944517579-9eb6bf73be87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkb2N1bWVudCUyMHBhZ2V8ZW58MHx8fHwxNzY4MDY3NjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "document page"
+      "description": "Apostila para concurso",
+      "imageUrl": "https://i.imgur.com/mYFqRVW.jpeg",
+      "imageHint": "study guide cover"
     },
     {
       "id": "handout-2",
-      "description": "Handout page 2",
-      "imageUrl": "https://images.unsplash.com/photo-1767806109084-9e20d5c8d0d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkb2N1bWVudCUyMHBhZ2V8ZW58MHx8fHwxNzY4MDY3NjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "document page"
+      "description": "Apostila para concurso",
+      "imageUrl": "https://i.imgur.com/XJt52b0.jpeg",
+      "imageHint": "study guide cover"
     },
     {
       "id": "handout-3",
-      "description": "Handout page 3",
-      "imageUrl": "https://images.unsplash.com/photo-1767980643277-3c835f981579?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZG9jdW1lbnQlMjBwYWdlfGVufDB8fHx8MTc2ODA2NzYwMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "document page"
+      "description": "Apostila para concurso",
+      "imageUrl": "https://i.imgur.com/D4s6L5z.jpeg",
+      "imageHint": "study guide cover"
     },
     {
       "id": "handout-4",
-      "description": "Handout page 4",
-      "imageUrl": "https://images.unsplash.com/photo-1760974667644-bd58e6b1b158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkb2N1bWVudCUyMHBhZ2V8ZW58MHx8fHwxNzY4MDY3NjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "document page"
+      "description": "Apostila para concurso",
+      "imageUrl": "https://i.imgur.com/kS9uM1R.jpeg",
+      "imageHint": "study guide cover"
     },
     {
       "id": "handout-5",
-      "description": "Handout page 5",
-      "imageUrl": "https://images.unsplash.com/photo-1610385983592-bd3cb040d9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2N1bWVudCUyMHBhZ2V8ZW58MHx8fHwxNzY4MDY3NjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "document page"
+      "description": "Apostila para concurso",
+      "imageUrl": "https://i.imgur.com/dZ2Z2zJ.jpeg",
+      "imageHint": "study guide cover"
+    },
+    {
+      "id": "handout-6",
+      "description": "Apostila para concurso",
+      "imageUrl": "https://i.imgur.com/eBqLq3Q.jpeg",
+      "imageHint": "study guide cover"
+    },
+    {
+      "id": "handout-7",
+      "description": "Apostila para concurso",
+      "imageUrl": "https://i.imgur.com/nS3l2kG.jpeg",
+      "imageHint": "study guide cover"
     },
     {
       "id": "social-comments",

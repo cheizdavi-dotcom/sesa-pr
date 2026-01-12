@@ -53,6 +53,12 @@
       "description": "Social media comments about the study material",
       "imageUrl": "https://i.imgur.com/VDvpSz4.png",
       "imageHint": "social media comments"
+    },
+    {
+      "id": "social-comments-3",
+      "description": "Social media comments about the study material",
+      "imageUrl": "https://i.imgur.com/WSrEOEr.png",
+      "imageHint": "social media comments"
     }
   ]
 }

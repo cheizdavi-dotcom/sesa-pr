@@ -43,7 +43,13 @@
       "imageHint": "study guide cover"
     },
     {
-      "id": "social-comments",
+      "id": "social-comments-1",
+      "description": "Social media comments about the study material",
+      "imageUrl": "https://i.imgur.com/QCNozEE.png",
+      "imageHint": "social media comments"
+    },
+    {
+      "id": "social-comments-2",
       "description": "Social media comments about the study material",
       "imageUrl": "https://i.imgur.com/VDvpSz4.png",
       "imageHint": "social media comments"

@@ -15,7 +15,7 @@ import {
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 export default function SocialProofCarouselSection() {
-    const socialProofImage = PlaceHolderImages.find(p => p.id === 'social-comments');
+    const socialProofImages = PlaceHolderImages.filter(p => p.id.startsWith('social-comments-'));
     const plugin = React.useRef(
         Autoplay({ delay: 2500, stopOnInteraction: true })
     )
@@ -28,7 +28,7 @@ export default function SocialProofCarouselSection() {
             Depoimentos de Candidatos
           </h2>
         </div>
-        {socialProofImage && (
+        {socialProofImages.length > 0 && (
             <Carousel
             plugins={[plugin.current]}
             opts={{
@@ -39,38 +39,24 @@ export default function SocialProofCarouselSection() {
             onMouseLeave={plugin.current.reset}
             >
             <CarouselContent>
-                <CarouselItem>
-                    <div className="p-1">
-                    <Card className="shadow-lg rounded-xl overflow-hidden">
-                        <CardContent className="flex items-center justify-center p-0">
-                            <Image 
-                                src={socialProofImage.imageUrl}
-                                alt={socialProofImage.description}
-                                width={1080}
-                                height={600}
-                                className="rounded-md object-cover"
-                                data-ai-hint={socialProofImage.imageHint}
-                            />
-                        </CardContent>
-                    </Card>
-                    </div>
-                </CarouselItem>
-                <CarouselItem>
-                    <div className="p-1">
-                    <Card className="shadow-lg rounded-xl overflow-hidden">
-                        <CardContent className="flex items-center justify-center p-0">
-                            <Image 
-                                src={socialProofImage.imageUrl}
-                                alt={socialProofImage.description}
-                                width={1080}
-                                height={600}
-                                className="rounded-md object-cover"
-                                data-ai-hint={socialProofImage.imageHint}
-                            />
-                        </CardContent>
-                    </Card>
-                    </div>
-                </CarouselItem>
+                {socialProofImages.map((image) => (
+                    <CarouselItem key={image.id}>
+                        <div className="p-1">
+                        <Card className="shadow-lg rounded-xl overflow-hidden">
+                            <CardContent className="flex items-center justify-center p-0">
+                                <Image 
+                                    src={image.imageUrl}
+                                    alt={image.description}
+                                    width={1080}
+                                    height={600}
+                                    className="rounded-md object-cover"
+                                    data-ai-hint={image.imageHint}
+                                />
+                            </CardContent>
+                        </Card>
+                        </div>
+                    </CarouselItem>
+                ))}
             </CarouselContent>
             <CarouselPrevious className="hidden sm:flex" />
             <CarouselNext className="hidden sm:flex" />

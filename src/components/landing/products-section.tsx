@@ -4,38 +4,38 @@ import { Check } from "lucide-react";
 import Link from 'next/link';
 
 const technicalProducts = [
-    { name: "Técnico de Enfermagem" },
-    { name: "Técnico de Laboratório" },
-    { name: "Técnico de Segurança do Trabalho" },
-    { name: "Técnico em Contabilidade" },
-    { name: "Técnico em Informática" },
-    { name: "Técnico em Radiologia" },
-    { name: "Inspetor de Saneamento" },
-    { name: "Técnico Administrativo" },
+    { name: "Técnico de Enfermagem", href: "https://pay.cakto.com.br/gtxngvj_726768" },
+    { name: "Técnico de Laboratório", href: "https://pay.cakto.com.br/eks4ueb_726800" },
+    { name: "Técnico de Segurança do Trabalho", href: "https://pay.cakto.com.br/q2z2uiv_726807" },
+    { name: "Técnico em Contabilidade", href: "https://pay.cakto.com.br/32tiqc2_726814" },
+    { name: "Técnico em Informática", href: "https://pay.cakto.com.br/o8t468g_726823" },
+    { name: "Técnico em Radiologia", href: "https://pay.cakto.com.br/qsx8yo4_726849" },
+    { name: "Inspetor de Saneamento", href: "https://pay.cakto.com.br/q4qn4oj_726854" },
+    { name: "Técnico Administrativo", href: "https://pay.cakto.com.br/oqa24g2_726860" },
 ];
 
 const higherLevelProducts = [
-    { name: "Administrador" },
-    { name: "Analista de Sistemas" },
-    { name: "Arquiteto" },
-    { name: "Assistente Social" },
-    { name: "Biólogo" },
-    { name: "Biomédico" },
-    { name: "Contador" },
-    { name: "Enfermeiro" },
-    { name: "Engenheiro Civil" },
-    { name: "Farmacêutico" },
-    { name: "Fisioterapeuta" },
-    { name: "Fonoaudiólogo" },
-    { name: "Médico Veterinário" },
-    { name: "Nutricionista" },
-    { name: "Psicólogo" },
-    { name: "Químico" },
-    { name: "Terapeuta Ocupacional" },
-    { name: "Economista" },
+    { name: "Administrador", href: "#" },
+    { name: "Analista de Sistemas", href: "#" },
+    { name: "Arquiteto", href: "#" },
+    { name: "Assistente Social", href: "#" },
+    { name: "Biólogo", href: "#" },
+    { name: "Biomédico", href: "#" },
+    { name: "Contador", href: "#" },
+    { name: "Enfermeiro", href: "#" },
+    { name: "Engenheiro Civil", href: "#" },
+    { name: "Farmacêutico", href: "#" },
+    { name: "Fisioterapeuta", href: "#" },
+    { name: "Fonoaudiólogo", href: "#" },
+    { name: "Médico Veterinário", href: "#" },
+    { name: "Nutricionista", href: "#" },
+    { name: "Psicólogo", href: "#" },
+    { name: "Químico", href: "#" },
+    { name: "Terapeuta Ocupacional", href: "#" },
+    { name: "Economista", href: "#" },
 ];
 
-const ProductCard = ({ name }: { name: string }) => (
+const ProductCard = ({ name, href }: { name: string, href: string }) => (
     <Card className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white rounded-xl overflow-hidden border-gray-200">
         <CardHeader className="bg-blue-600 text-white p-4">
             <CardTitle className="text-lg font-bold text-center">{name}</CardTitle>
@@ -63,7 +63,7 @@ const ProductCard = ({ name }: { name: string }) => (
                 </ul>
             </div>
             <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-md font-bold mt-4">
-                <Link href="#">
+                <Link href={href}>
                     COMEÇAR A ESTUDAR AGORA
                 </Link>
             </Button>
@@ -103,7 +103,7 @@ export default function ProductsSection() {
                         </h3>
                         <div className="mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                             {technicalProducts.map((product) => (
-                                <ProductCard key={product.name} name={product.name} />
+                                <ProductCard key={product.name} name={product.name} href={product.href} />
                             ))}
                         </div>
                     </div>
@@ -114,7 +114,7 @@ export default function ProductsSection() {
                         </h3>
                         <div className="mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                             {higherLevelProducts.map((product) => (
-                                <ProductCard key={product.name} name={product.name} />
+                                <ProductCard key={product.name} name={product.name} href={product.href} />
                             ))}
                         </div>
                     </div>

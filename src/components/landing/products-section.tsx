@@ -28,11 +28,11 @@ const higherLevelProducts = [
     { name: "Fisioterapeuta", href: "https://pay.cakto.com.br/3cdouqe_727004" },
     { name: "Fonoaudiólogo", href: "https://pay.cakto.com.br/trkbcv8_727018" },
     { name: "Médico Veterinário", href: "https://pay.cakto.com.br/z59kza7_727029" },
-    { name: "Nutricionista", href: "#" },
-    { name: "Psicólogo", href: "#" },
-    { name: "Químico", href: "#" },
-    { name: "Terapeuta Ocupacional", href: "#" },
-    { name: "Economista", href: "#" },
+    { name: "Nutricionista", href: "https://pay.cakto.com.br/39s27gv_727040" },
+    { name: "Psicólogo", href: "https://pay.cakto.com.br/gz39p42_727056" },
+    { name: "Químico", href: "https://pay.cakto.com.br/37ai735_727085" },
+    { name: "Terapeuta Ocupacional", href: "https://pay.cakto.com.br/7f9334m_727095" },
+    { name: "Economista", href: "https://pay.cakto.com.br/7f9334m_727095" },
 ];
 
 const ProductCard = ({ name, href }: { name: string, href: string }) => (

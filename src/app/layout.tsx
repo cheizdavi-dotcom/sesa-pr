@@ -15,6 +15,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.pixelId = "696be2f6bd4e27fb783a4ea8";`,
+          }}
+        />
+        <script
+          async
+          defer
+          src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />

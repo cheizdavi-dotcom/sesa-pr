@@ -17,7 +17,7 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.pixelId = "696be2f6bd4e27fb783a4ea8";`,
+            __html: `window.pixelId = "696be8829114906f7c23c18d";`,
           }}
         />
         <script

@@ -24,13 +24,13 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         <Toaster />
-        <Script id="set-pixel-id" strategy="afterInteractive">
+        <Script id="set-pixel-id" strategy="beforeInteractive">
           {`window.pixelId = "696be8829114906f7c23c18d";`}
         </Script>
         <Script
           id="utmify-pixel-script"
           src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
       </body>
     </html>

@@ -1,4 +1,5 @@
 import type {Metadata} from 'next';
+import Script from 'next/script';
 import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 
@@ -15,16 +16,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.pixelId = "696be8829114906f7c23c18d";`,
-          }}
-        />
-        <script
-          async
-          defer
-          src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -33,6 +24,14 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         <Toaster />
+        <Script id="set-pixel-id" strategy="afterInteractive">
+          {`window.pixelId = "696be8829114906f7c23c18d";`}
+        </Script>
+        <Script
+          id="utmify-pixel-script"
+          src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

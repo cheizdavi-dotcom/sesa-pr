@@ -26,7 +26,7 @@ export default function PillarsSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-gray-800">
-              Por que estudar com o Aprova Mais?
+              Por que estudar com o SesaExpert?
             </h2>
             <div className="max-w-3xl text-gray-600 md:text-lg">
               <p>A maioria das apostilas apenas reúne conteúdo.</p>

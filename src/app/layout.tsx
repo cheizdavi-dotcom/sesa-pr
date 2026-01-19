@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'SESA-PR Accelerator',
+  title: 'SesaExpert | Elite SESA-PR',
   description: 'Material de estudo focado para o concurso SESA-PR 2026',
 };
 

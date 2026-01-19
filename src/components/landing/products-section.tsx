@@ -84,6 +84,18 @@ export default function ProductsSection() {
                     </p>
                 </div>
 
+                <div className="my-8 rounded-lg bg-yellow-100/70 border border-yellow-200 p-6 text-center shadow-sm max-w-3xl mx-auto">
+                    <p className="text-gray-600 md:text-lg">
+                        Apostilas desse nível normalmente custam entre R$ 60 e R$ 120
+                    </p>
+                    <p className="text-2xl md:text-4xl font-bold text-blue-600 my-2">
+                        Aqui, você paga apenas R$ 17,90
+                    </p>
+                    <p className="text-sm text-gray-500">
+                        Sem mensalidade. Acesso vitalício. Garantia de 7 dias.
+                    </p>
+                </div>
+
                 <div className="space-y-16">
                     <div>
                         <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mb-8 text-left">

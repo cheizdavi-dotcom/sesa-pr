@@ -44,7 +44,7 @@ const ProductCard = ({ name, href }: { name: string, href: string }) => (
             <div>
                 <div className="text-center">
                      <p className="text-4xl font-bold text-gray-900">
-                        R$ 12,90
+                        R$ 17,90
                      </p>
                 </div>
                 <ul className="space-y-2 text-sm text-gray-600 mt-4">
@@ -81,18 +81,6 @@ export default function ProductsSection() {
                     </h2>
                     <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl mt-4">
                         Materiais completos, alinhados ao edital SESA-PR e focados na banca FAFIPA.
-                    </p>
-                </div>
-
-                <div className="max-w-2xl mx-auto bg-yellow-50 border border-yellow-300 rounded-lg p-6 text-center mb-12">
-                    <p className="text-lg font-bold text-red-600">
-                        SUPER DESCONTO HOJE
-                    </p>
-                    <p className="text-2xl font-bold text-blue-600 my-2">
-                        De <span className="line-through">R$ 19,90</span> por apenas R$ 12,90 no Pix
-                    </p>
-                    <p className="text-sm text-gray-500 animate-pulse-strong">
-                        (Oferta válida apenas para as próximas 2 horas)
                     </p>
                 </div>
 

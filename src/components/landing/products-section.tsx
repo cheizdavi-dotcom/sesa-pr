@@ -44,7 +44,7 @@ const ProductCard = ({ name, href }: { name: string, href: string }) => (
             <div>
                 <div className="text-center">
                      <p className="text-4xl font-bold text-gray-900">
-                        R$ 19,90
+                        R$ 12,90
                      </p>
                 </div>
                 <ul className="space-y-2 text-sm text-gray-600 mt-4">
@@ -89,7 +89,7 @@ export default function ProductsSection() {
                         Apostilas desse nível normalmente custam entre <span className="line-through">R$ 60 e R$ 120</span>
                     </p>
                     <p className="text-2xl font-bold text-blue-600 my-2">
-                        Aqui, você paga apenas R$ 19,90
+                        Aqui, você paga apenas R$ 12,90
                     </p>
                     <p className="text-sm text-gray-500">
                         Sem mensalidade. Acesso vitalício. Garantia de 7 dias.

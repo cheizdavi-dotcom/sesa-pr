@@ -91,7 +91,7 @@ export default function ProductsSection() {
                     <p className="text-2xl font-bold text-blue-600 my-2">
                         De <span className="line-through">R$ 19,90</span> por apenas R$ 12,90 no Pix
                     </p>
-                    <p className="text-sm text-gray-500 animate-pulse">
+                    <p className="text-sm text-gray-500 animate-pulse-strong">
                         (Oferta válida apenas para as próximas 2 horas)
                     </p>
                 </div>
